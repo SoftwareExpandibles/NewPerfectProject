@@ -1,0 +1,58 @@
+﻿@model WebApplication2.Models.Size
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Size</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Color.ActualColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color.ActualColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActualSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActualSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StockOnHand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StockOnHand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReOrderQuantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReOrderQuantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SizeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
